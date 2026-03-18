@@ -4,11 +4,61 @@
     <meta charset="UTF-8" />
     <title>Resume</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter"
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display" />
   </head>
-  <body>
-    <h1>Summary</h1>
-    <h1>Work Experience</h1>
-    <h1>Education</h1>
-    <h1>Skills</h1>
+  <body class="no-scroll">
+    <video class="overlay-video" autoplay muted loop playsinline>
+      <source src="./video/sketches.mov" type="video/quicktime" />
+      Your browser does not support the video tag.
+    </video>
+
+    <header class="top-nav">
+      <div class="nav-brand">edo</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./resume.html">Resume</a>
+        <div class="nav-item dropdown">
+          <a href="./portfolio.html" class="dropdown-toggle">Portfolio</a>
+          <div class="dropdown-menu" aria-label="Portfolio submenu">
+            <a href="./portfolio/art.html">Art</a>
+            <a href="./portfolio/technical.html">Technical</a>
+            <a href="./portfolio/photography.html">Photography</a>
+          </div>
+        </div>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div id="name-container">
+      <h1 id="name">Estelle</h1>
+      <h1 id="forename">Do Huu Tin</h1>
+      <div class="cta-buttons">
+        <a class="cta-button" href="portfolio.html">Portfolio</a>
+        <a class="cta-button cta-secondary" href="resume.html">Resume</a>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/estelle-do-huu-tin/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="./icon/linkedin-logo.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://discord.com/invite/estelledht.art" target="_blank" rel="noopener" aria-label="Discord">
+        <img src="./icon/discord-logo.svg" alt="Discord" />
+      </a>
+      <a href="https://www.instagram.com/estelle_doht/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="./icon/instagram-logo.svg" alt="Instagram" />
+      </a>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2026 Estelle DO HUU TIN — All rights reserved.</p>
+    </footer>
   </body>
 </html>
